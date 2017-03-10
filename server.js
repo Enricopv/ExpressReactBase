@@ -20,7 +20,7 @@ server.use(logger('dev'));
 server.use(bodyParser.json());
 server.use(bodyParser.urlencoded({ extended: false }));
 server.use(cookieParser());
-server.use(express.static(path.join(__dirname, 'public')));
+// server.use(express.static(path.join(__dirname, 'public')));
 
 // server.use('/', index);
 // server.use('/users', users);
