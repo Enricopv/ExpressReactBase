@@ -1,0 +1,20 @@
+.Head {
+  text-align: center;
+}
+
+.Head-logo {
+  animation: Head-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.Head-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+@keyframes Head-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
