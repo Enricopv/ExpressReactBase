@@ -10,6 +10,9 @@ var users = require('./routes/users');
 
 var server = express();
 
+//Necessary for Heroku
+var port = process.env.PORT || 1337;
+
 // view engine setup
 server.set('views', path.join(__dirname, 'views'));
 server.set('view engine', 'jade');
@@ -52,5 +55,16 @@ server.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
+if (server.get('env') === 'development') {
+    server.listen(port, function () {
+        console.log("Express server listening on port %d in %s mode", this.address().port, server.settings.env);
+    });
+    
+} else {
+    server.listen(port, function () {
+        console.log("Express server listening on port %d in %s mode", this.address().port, server.settings.env);
+    });
+}
 
 module.exports = server;
