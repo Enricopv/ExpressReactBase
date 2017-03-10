@@ -6,13 +6,13 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 // var index = require('./routes/index');
-// var users = require('./routes/users');
+var users = require('./routes/users');
 
 var server = express();
 
 // view engine setup
-// server.set('views', path.join(__dirname, 'views'));
-// server.set('view engine', 'jade');
+server.set('views', path.join(__dirname, 'views'));
+server.set('view engine', 'jade');
 
 // uncomment after placing your favicon in /public
 //server.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
@@ -23,7 +23,7 @@ server.use(cookieParser());
 // server.use(express.static(path.join(__dirname, 'public')));
 
 // server.use('/', index);
-// server.use('/users', users);
+server.use('/users', users);
 
 
 // Express only serves static assets in production
