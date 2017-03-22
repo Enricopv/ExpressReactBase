@@ -33,7 +33,10 @@ Express backend API with a React frontend boilerplate for my projects. Maybe it 
 
 <div id="how">
   <h3>Cool. How do I use this?</h3>
-  In order to run this app you should run npm install in both the root and /client directories in order to install their dependencies.
+  
+  <p>Well if you are completely new to everything, you must first make sure you have node installed by visiting https://nodejs.org/. This will help you get both node and npm installed.</p>
+ 
+  <p>In order to run this app you should run npm install in both the root and /client directories in order to install their dependencies.</p>
 
   Root install
   <pre>
