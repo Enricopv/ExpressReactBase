@@ -29,11 +29,60 @@ Express backend API with a React frontend boilerplate for my projects. Maybe it 
 
   I followed the below tutorial that is linked from the <a href="https://github.com/facebookincubator/create-react-app">create-react-app</a> github:<br>
   https://www.fullstackreact.com/articles/using-create-react-app-with-a-server/
+
 </div>
 
 <div id="how">
   <h3>Cool. How do I use this?</h3>
-      <p>Well if you are completely new to everything, you must first make sure you have node installed by visiting https://nodejs.org/. This will help you get both node and npm installed.</p>
+<ol>
+  <li>
+    <p>
+    If you are completely new to everying, make sure to download node.js first at nodejs.org. This will give you both node and npm. Once installed, open up terminal or cmd.exe (for windows) and type:
+    </p>
+    <pre>
+    node --version
+    </pre>
+    <p>If installed properly you should see the version output back to you</p>
+  </li>
+  
+  <li>
+    <p>
+      Next you want to download or clone this project. Place it anywhere and make sure to navigate to it in the terminal or command line. For example, if you downloaded the project to C:/>Documents/GitHub/ExpressReactBase. Then you need to type:
+    </p>
+    <pre>
+      C:
+      cd Documents/GitHub/ExpressReactBase
+    </pre>
+  </li>
+  
+  <li>
+  <p>In order to run this app you should use npm install in both the root and /client directories in order to the express server and react dependencies respectively.</p>
+  <p>Root install</p>
+  <pre>
+  npm install
+  </pre>
+  <p>Navigate to client and install</p>
+  <pre>
+  cd client
+  npm install
+  </pre>
+  </li>
+
+  <li>
+  <p>Once this done you want to go back to root and start the app</p>
+  <pre>
+  cd ..
+  npm start
+  </pre>
+  </li>
+
+  <li>
+  <p>
+  Viola! You should see the basic create-react-app webpage.
+  If you enter in http://localhost:3000/api/getdata you should get json back.
+  </p>
+  </li>
+</ol>
 
     
 </div>
