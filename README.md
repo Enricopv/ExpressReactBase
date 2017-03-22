@@ -40,18 +40,18 @@ Express backend API with a React frontend boilerplate for my projects. Maybe it 
     If you are completely new to everying, make sure to download node.js first at nodejs.org. This will give you both node and npm. Once installed, open up terminal or cmd.exe (for windows) and type:
     </p>
     <pre>
-    node --version
+node --version
     </pre>
     <p>If installed properly you should see the version output back to you</p>
   </li>
   
   <li>
     <p>
-      Next you want to download or clone this project. Place it anywhere and make sure to navigate to it in the terminal or command line. For example, if you downloaded the project to C:/>Documents/GitHub/ExpressReactBase. Then you need to type:
+      Next you want to download or clone this project. Place it anywhere and make sure to navigate to it in the terminal or command line. For example, if you downloaded the project to C:\Documents\GitHub\ExpressReactBase. Then you need to type:
     </p>
     <pre>
-      C:
-      cd Documents/GitHub/ExpressReactBase
+  C:
+  cd Documents/GitHub/ExpressReactBase
     </pre>
   </li>
   
