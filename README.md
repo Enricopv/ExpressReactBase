@@ -36,7 +36,7 @@ Express backend API with a React frontend boilerplate for my projects. Maybe it 
   
   <p>Well if you are completely new to everything, you must first make sure you have node installed by visiting https://nodejs.org/. This will help you get both node and npm installed.</p>
  
-  <p>In order to run this app you should run npm install in both the root and /client directories in order to install their dependencies.</p>
+  <p>In order to run this app you should use npm install in both the root and /client directories in order to the express server and react dependencies respectively.</p>
 
   Root install
   <pre>
