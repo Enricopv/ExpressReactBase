@@ -1,7 +1,10 @@
 # See https://help.github.com/ignore-files/ for more about ignoring files.
 
 # dependencies
-# /node_modules
+# We allow babel-core to allow for heroku to be able to run the server
+/node_modules/*
+!/node_modules/babel-core
+/client/node_modules
 
 # testing
 /coverage
