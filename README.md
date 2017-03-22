@@ -1,5 +1,5 @@
 # ExpressReactBase
-Express backend with a React front end boilerplate for my projects. Maybe it will be useful to you too :)
+Express backend API with a React frontend boilerplate for my projects. Maybe it will be useful to you too :)
 
 <h3>Why is this a thing?</h3>
 This is a project meant to have boilerplate code to:<br>
