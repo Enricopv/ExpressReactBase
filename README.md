@@ -13,7 +13,7 @@ This app was built using:
 <ol>
   <li>express-generator</li>
   <li>Creating a /client folder and running create-react-app</li>
-  <li>I then modified server.js to make use of an API route while serving </li>
+  <li>I then modified server.js to make use of an API route and ready to serve a react frontend in production</li>
 </ol>
 
 I followed the below tutorial that is linked from the <a href="https://github.com/facebookincubator/create-react-app">create-react-app</a> github:<br>
