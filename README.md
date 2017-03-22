@@ -56,7 +56,7 @@ node --version
   </li>
   
   <li>
-  <p>In order to run this app you should use npm install in both the root and /client directories in order to the express server and react dependencies respectively.</p>
+  <p>In order to run this app you should use npm install in both the root and /client directories in order to download the express server and react app dependencies respectively.</p>
   <p>Root install</p>
   <pre>
   npm install
