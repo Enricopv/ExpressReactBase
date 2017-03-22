@@ -2,9 +2,11 @@
 Express backend API with a React frontend boilerplate for my projects. Maybe it will be useful to you too :)
 
 <h2><u>Table of Contents</u></h2>
-<a href="#why">Why is this a thing?</a>
-<a href="#what">What is this?</a>
-<a href="#how">How does it work?</a>
+<ul>
+  <li><a href="#why">Why is this a thing?</a></li>
+  <li><a href="#what">What is this?</a></li>
+  <li><a href="#how">How does it work?</a></li>
+</ul>
 
 <div id="why">
 <h3>Why is this a thing?</h3>
