@@ -1,38 +1,26 @@
 var express = require('express');
-var path = require('path');
-var favicon = require('serve-favicon');
-var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-
-// var index = require('./routes/index');
-var users = require('./routes/users');
+var logger = require('morgan');
+var api = require('./routes/api');
 
 var server = express();
 
 //Necessary for Heroku
 var port = process.env.PORT || 1337;
 
-// view engine setup
-server.set('views', path.join(__dirname, 'views'));
-server.set('view engine', 'jade');
-
-// uncomment after placing your favicon in /public
-//server.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 server.use(logger('dev'));
 server.use(bodyParser.json());
 server.use(bodyParser.urlencoded({ extended: false }));
 server.use(cookieParser());
-// server.use(express.static(path.join(__dirname, 'public')));
-
-// server.use('/', index);
-server.use('/users', users);
-
 
 // Express only serves static assets in production
 if (process.env.NODE_ENV === 'production') {
   server.use(express.static('client/build'));
 }
+
+// Define API routes before the *
+server.use('/api', api);
 
 server.get('*', (req, res) => {
     res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
