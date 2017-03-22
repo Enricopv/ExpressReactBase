@@ -34,28 +34,7 @@ Express backend API with a React frontend boilerplate for my projects. Maybe it 
 <div id="how">
   <h3>Cool. How do I use this?</h3>
       <p>Well if you are completely new to everything, you must first make sure you have node installed by visiting https://nodejs.org/. This will help you get both node and npm installed.</p>
-   
-      <p>In order to run this app you should use npm install in both the root and /client directories in order to the express server and react dependencies respectively.</p>
-      <p>Root install</p>
-     
-        npm install
-      
 
-    <p>Navigate to client and install</p>
-      
-        cd client
-        npm install
-    
- 
-    
-      Once this done you want to go back to root and start the app
-   
-      
-        npm start
-      
-    
-      Viola! You should see the basic create-react-app webpage.
-      If you enter in http://localhost:3000/api/getdata you should get json back.
     
 </div>
 
