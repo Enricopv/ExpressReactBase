@@ -14,6 +14,7 @@ class Head extends Component {
             <Link to="/" className="link">Home</Link>
             <Link to="/display" className="link">Alternate Component</Link>
             <Link to="/apidemo" className="link">Api Example</Link>
+            <Link to="/productexample" className="link">Shopping Cart</Link>
           </div>
         </div>
         <div className="Site-page">
