@@ -3,6 +3,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var logger = require('morgan');
 var api = require('./routes/api');
+var dotenv = require('dotenv');
 
 var server = express();
 
@@ -14,9 +15,11 @@ server.use(bodyParser.json());
 server.use(bodyParser.urlencoded({ extended: false }));
 server.use(cookieParser());
 
-// Express only serves static assets in production
+dotenv.load();
+
 if (process.env.NODE_ENV === 'production') {
-  server.use(express.static('client/build'));
+  server.use(express.static('client/build')); 
+  server.use('*', express.static('client/build')); 
 }
 
 // Define API routes before the *
@@ -25,6 +28,7 @@ server.use('/api', api);
 server.get('*', (req, res) => {
     res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
 });
+
 
 // catch 404 and forward to error handler
 server.use(function(req, res, next) {
